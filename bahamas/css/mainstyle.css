@@ -1,0 +1,152 @@
+a img {border: none; }
+body
+{
+
+overflow-x: hidden;
+width:100%;
+margin:auto;
+min-width:750px;
+max-width:2000px;
+background-image:url('../images/bg.jpg');
+
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100%;
+}
+
+
+#header{
+margin-right:auto;
+margin-left:auto;
+height:95px;
+width:800px;
+float:center;
+font: 55px Forte;
+}
+
+#wrapper{
+width:800px;
+
+top:100px;
+position:relative;
+margin-right:auto;
+margin-left:auto;
+background: #FFFFFF;
+overflow: hidden;
+
+}
+
+
+ <!--menu bar-->
+ #menu,
+#menu ul,
+#menu ul li,
+#menu ul li a {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Capriola', sans-serif;
+}
+#menu:before,
+#menu:after,
+#menu > ul:before,
+#menu > ul:after {
+  content: '';
+  display: table;
+}
+#menu:after,
+#menu > ul:after {
+  clear: both;
+}
+#menu {
+ 
+  height: 69px;
+  background: url(../images/bottom-bg.png) repeat-x center bottom;
+  border-radius: 2px;
+  width: auto;
+}
+#menu ul {
+  background: url(../images/nav-bg.png) repeat-x 0px 4px;
+  height: 69px;
+}
+#menu ul li {
+  float: left;
+  list-style: none;
+}
+#menu ul li a {
+  display: block;
+  height: 37px;
+  padding: 14px 18px 0;
+  margin: 4px 2px 0;
+  border-radius: 2px 2px 0 0;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000000;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  opacity: .9;
+}
+#menu ul li:first-child a {
+  margin: 4px 2px 0 0;
+}
+#menu ul li a:hover,
+#menu ul li.active a {
+  background: url(../images/color.png) center bottom;
+  display: block;
+  height: 37px;
+  margin-top: 0px;
+  padding-top: 26px;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.55);
+  opacity: 1;
+}
+
+
+#footer{
+	position:relative;
+	bottom:0px;
+	
+	width:800px;
+	font-size:13px;
+	background:#ffffff;
+	height:90px;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	opacity:0.9;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+}
+
+#footer a{
+	padding:1px 1px;
+	letter-spacing:1px;
+	color:#333333;
+}
+
+#footer b{
+	float:right;
+	padding:1px 1px;
+	letter-spacing:1px;
+	color:#333333;
+}
+
+
+#footer a:hover{
+	color:#000000;
+	opacity:0.5;
+}
+
+.footerul{
+	list-style:none;
+
+}
+.footerul a{
+text-decoration:none;
+color:#ffffff;
+}
+
+#space{
+width:30px;
+}

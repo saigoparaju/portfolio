@@ -1,0 +1,36 @@
+
+
+
+
+
+@font-face {
+    font-family: 'AdelleBasicBold';
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#container { width: 920px; padding: 0 20px; margin: 0 auto; }
+
+#header { height: 36px; background: url(../images/bluesquares.gif); position: relative; }
+#header a.g3d { background: url(../images/g3dlabs.png); text-indent: -9999px; width: 145px; height: 50px; display: block; position: absolute; left: 12px; top: 4px; }
+
+
+h1, h2, h3, p { color: #333; }
+h2 { font-family: 'AdelleBasicBold', Arial, sans-serif; }
+h3 { font-family: 'BonvenoCFLight', Arial, sans-serif; margin-bottom: 20px; }
+
+#iatag { text-decoration: none; color: #0090e2; }
+#iatag.ig:hover { background: #0090e2; color: #fff; padding: 3px 10px; border-radius: 20px; }
+
+p { line-height: 23px; margin-bottom: 20px; }
+p:last-of-type { margin-bottom: 0px; }
+
+#iimages{
+padding:40px;
+padding-bottom:1150px;
+}
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sreekar's Contact US</title>
+		<link rel="icon" href="images/icon.ico" type="image/x-icon">
+		<meta charset=utf-8>
+        <meta name="description" content="Sreekar Photography" />
+        <meta name="keywords" content="Sreekar's, Photography, Portraits, Landscapes, Wedding"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+
+			dw_Tooltip.defaultProps = {
+				//supportTouch: true, // set false by default
+				wrapFn: dw_Tooltip.wrapTextByImage
+			}
+			dw_Tooltip.content_vars = {
+				L1: {
+					img: 'images/15.jpg',
+					txt: 'I Sreekar Goparaju, started photography 10 years ago with a goal of capturing the beauty of the world. My love for photography has grown throughout these years. I decided to showcase my work and teach people out there who want to take up photography as a profession or hobby.',
+					w: 210 // width of tooltip
+				}
+
+				}
+
+		</script>
+		<script type="text/javascript">
+		function greeting()
+{
+alert("Welcome "+ document.forms["conform"]["fullname"].value + ".\n Thank you for Signing-Up.We will be sending you an E-mail soon.")
+}
+</script>
+		
+	</head>
+    <body>
+		<div id="logo">
+		 <a href="index.html" class="showTip L1"> <img src="images/logo.png">
+		 </a>
+		 </div>
+		
+		<div id="wrapper" name="wrapper">
+			<ul id="menu">
+			<li>
+			<a href="index.html">Home</a>
+			</li><li>
+				<a href="gallery.html">Gallery</a>
+				</li><li>
+				<a href="stock.html">Stock</a>
+				</li><li>
+				<a href="session.html">Session</a>
+				</li><li>
+			<a href="#" class="active">Contact</a>
+			</li><li>
+				<a href="learn.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Learn</a>
+				<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					<a href="learn.html">Video</a>
+					<a href="learn.html#footer">Content</a>
+				</div>
+				</li></ul>
+				<div style="clear:both">
+		
+		<div id="cdetails" name="csdetails">
+			<table><tr><td id="cbar"></td><td>
+			Sreekars Photography<br>
+			 111, Ridge Dr<br> 
+			Dekalb, Illinois,60115.
+			</td><td id="cbar"></td><td>
+			Mobile:111-222-3333<br>
+			contact@sreekarsphotography.com
+			</td><td id="cbar"></td><td>
+		<div class="forms">
+<table>
+		
+			<tr><td>Name<sup>*</sup></td><td> <input type="text" value="Your Name" name="fullname" onfocus="this.value=''; this.onfocus=null;" size="30" aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"></td></tr>
+			<tr><td>Email<sup>*</sup></td><td> <input type="email" id="email" value="abc@gmail.com" name="email" onfocus="this.value=''; this.onfocus=null;" size="30" required></td></tr>
+		   	<tr><td>Comments </td><td><textarea rows="3" cols="24" onfocus="this.value=''; this.onfocus=null;" >I believe .....</textarea></td></tr>
+			<tr><td></td>
+			<td><input id="submit" type="submit" value="Sign-Up">  <input id="submit" type="reset" value="Reset"></td></tr>
+		</table>
+		</form>
+   
+		</div>
+		</td>
+		<td id="cbar"></td></tr></table>
+		</div>
+		<td id="cbar"></td></tr></table>
+		</div>
+		<div id="cmap">
+			
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5934.870768063025!2d-88.76074160000005!3d41.947982500000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f2ae49dbc1fc3%3A0xb7f2155918c2588e!2sRidge+Dr!5e0!3m2!1sen!2sus!4v1393433161287" id="iframel">
+			</iframe>
+		</div>
+		
+		<div id="footer">
+				
+			<a href="http://www.facebook.com/sreekarsclicks" target="_blank"><img src="images/fb.png" alt="logo" /></a>
+			<a href="http://www.flickr.com/sreekargsv" target="_blank"><img src="images/fr.png" alt="logo"/></a>
+			<b>Photography by Sreekar Goparaju</b>
+			
+		</div>
+	</body>
+</html>

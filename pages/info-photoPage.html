@@ -1,0 +1,67 @@
+<div class="container bg-2">
+    <div class="row">
+        <div class="col-lg-12 name-head text-center">
+            <h3>{{name}}</h3>
+            <hr/>
+        </div>
+        
+    </div>
+    
+            <!-- /.row -->
+    <div class="row">
+        <div class="col-md-1 back-btn">
+            <a href="#back" role="button">
+                <span class="glyphicon glyphicon-chevron-left b-btn" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="col-md-8">  
+            <img class="img-responsive" style="width:750 height:500" ng-src="/images/{{img}}"/>
+        </div>
+
+        <div class="col-md-3">
+            
+            <p class="name-head">{{info}}</p>
+            <h5>TECHNOLOGIES USED</h5>
+            <ul>
+                <li ng-repeat="tec in techs">{{tec}}</li>
+            </ul>
+            <a href="{{link}}" target="_blank">
+            <button type="button" class="btn-vw">Visit Website</button>
+            </a>
+            
+        </div>
+    </div>
+        <div class="row name-head">
+
+            <div class="col-lg-12">
+                <h4>OTHER PROJECTS</h4>
+                <hr/>
+            </div>
+            
+            
+            <div class="col-sm-3 col-xs-6">
+                <a href="#{{other[0]}}Page">
+                    <img class="img-responsive portfolio-item" style="width:500 height:300" src="/images/{{other[0]}}.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#{{other[1]}}Page">
+                    <img class="img-responsive portfolio-item" style="width:500 height:300" src="/images/{{other[1]}}.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#{{other[2]}}Page">
+                    <img class="img-responsive portfolio-item" style="width:500 height:300" src="/images/{{other[2]}}.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#{{other[3]}}Page">
+                    <img class="img-responsive portfolio-item" style="width:500 height:300" src="/images/{{other[3]}}.jpg" alt="">
+                </a>
+            </div>
+    </div>
+    
+</div>

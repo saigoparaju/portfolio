@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sreekar's Stock</title>
+		<link rel="icon" href="images/icon.ico" type="image/x-icon">
+		<meta charset=utf-8>
+        <meta name="description" content="Sreekar Photography" />
+        <meta name="keywords" content="Sreekar's, Photography, Portraits, Landscapes, Wedding"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="js/jquery.fancybox.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack - stock.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
+	</head>
+    
+	<body>
+		<div id="logo">
+			<a href="index.html"> <img src="images/logo.png"/></a>
+		 </div>
+		 
+		<div id="wrapper">
+			<ul id="menu">
+			<li>
+				<a href="index.html">Home</a>
+			</li><li>
+				<a href="gallery.html">Gallery</a>
+			</li><li>
+				<a href="#" class="active">Stock</a>
+			</li><li>
+				<a href="session.html">Session</a>
+			</li><li>
+				<a href="contact.html">Contact</a>
+			</li><li>
+				<a href="learn.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Learn</a>
+				<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					<a href="learn.html">Video</a>
+					<a href="learn.html#footer">Content</a>
+				</div>
+			</li></ul>
+			<div style="clear:both">
+			
+			<div id="sgallery">
+			
+				<ul>
+				<li>
+					<a class="fancybox" rel="group" href="https://gqyp2w.dm1.livefilestore.com/y2p02dpRsKwL1gIDUC_4VSVgZk-siLHSKlnKH47HEt6JTgz732kk-qVPwF1XNALuL891fgqNQeshkt-BtaYqXzCGGIAt5DdLPGJjJtloas50hs/wallpaper3.jpg?psid=1" title="."><img src="images/stock1.jpg"/></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="https://gqyp2w.dm2304.livefilestore.com/y2pxNWucR6koYCmPkshJgY6OPACXhJuiNYGHEP4ADp96Jjt4T6-KKrVKRTo4UnpLWNdt2yMwyuOWUqD4eqM61DIEopHmPiQN3TWot1G7e7VdhM/DSC_2115.jpg?psid=1" title="."><img src="images/stock2.jpg"/></a>
+				</li>
+				
+				</ul>
+				<ul>
+				<li>
+					<a class="fancybox" rel="group" href="https://gqyp2w.dm2304.livefilestore.com/y2pfx9Y4zfZMAKyuvK1xNoeg6GkC5lQZwYJu89oRgUHfCx6oQvgqEIv7_-fsYCr1yS-1pA7PcEY0fF6Yczh7huPzOKVrgiyaLEzyd4lfedC4P4/DSC_5141.jpg?psid=1" title="."><img src="images/stock3.jpg"/></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="group" href="https://gqyp2w.dm2302.livefilestore.com/y2pepOXGDsa9SbCJtgabZ6znYbkHvScWtNcIJB_lJr7NDX56LTjhjYpHRNAkjD7rw2nzLJkqoMf112uD5_OEF4TASpkPOgwffhBBLpuRfyBFhw/DSC_5700.jpg?psid=1" title="."><img src="images/stock4.jpg" /></a>
+				</li>
+				
+				
+				<li>
+					<a class="fancybox" rel="group" href="https://gqyp2w.dm2302.livefilestore.com/y2peuanbB1uYYHI_To_9LYGRsrVJqm-ldXiO21P3ZaKAY3D52Es0KDp1B1T2-OcKcJ_VoNnFv0YD7fb2st6BKcsByeBoYbz8xYGke7hUeFiTW0/DSC_5752.jpg?psid=1" title=".">
+					<img src="images/stock5.jpg"/>
+					</a>
+				</li>
+				
+				</ul>
+			
+			</div>
+			
+			<div id="footer">
+				<a href="http://www.facebook.com/sreekarsclicks" target="_blank"><img src="images/fb.png" alt="logo" /></a>
+				<a href="http://www.flickr.com/sreekargsv" target="_blank"><img src="images/fr.png" alt="logo"/></a>
+				<b>Photography by Sreekar Goparaju</b>
+			</div>	
+				
+		<script>
+		$(".fancybox").fancybox({
+    afterLoad: function() {
+        this.title = '<a href="' + this.href + '">Buy it</a> ' + this.title;
+    },
+    helpers : {
+        title: {
+            type: 'inside'
+        }
+    }
+});
+</script>
+		
+	</body>
+</html>

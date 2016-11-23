@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> The Bahamas Islands</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<meta name="keywords" content="Bahamas, tourism">
+	<meta name="description" content="This site helps the the visitors to plan a trip and to know about Bahamas">
+	<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/pages.css">
+	<script type="text/javascript">
+		function greeting()
+{
+alert("Welcome "+ document.forms["conform"]["fullname"].value + ".\n Thank you for choosing us.We will be sending you an E-mail regarding your trip plan soon.")
+}
+</script>
+	<script>
+  var i = document.createElement("input");
+  i.setAttribute("type", "date");
+  if (i.type == "text") {
+    // No native date picker support :(
+    // Use Dojo/jQueryUI/YUI/Closure to create one,
+    // then dynamically replace that <input> element.
+  }
+</script>
+	   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	   <script type="text/javascript">
+function showText(obj)
+{
+if(obj.value=='Show')
+{
+document.getElementById('mytext').style.display='inline-block';
+
+}
+return;
+}
+
+function hideText(obj)
+{
+if(obj.value=='Hide')
+{
+document.getElementById('mytext').style.display='none';
+
+}
+return;
+}
+</script>
+
+</head>
+
+  <body>
+	<div id="header"><img src="images/logo.png"></div>
+	<div id="wrapper">
+	      <div id="menu">
+		    <ul style="list-style-type:none;">
+		     <li><a href="index.html">Home</a></li>
+		     <li><a href="islands.html">Islands</a></li>
+		     <li><a href="touristy.html">Touristy</a></li>
+		     <li><a href="attractions.html">Attractions</a></li>
+		     <li><a href="foodies.html">For Foodies</a></li>
+		     <li class="active"><a href="#">Plan your Trip</a></li>
+		     <li class="last"><a href="contact.html">Contact Us</a></li>
+		    </ul>
+	      </div>
+		  
+		  <div>
+			<form name="conform" method="post" onsubmit="greeting()" action="mailto:z1693207@students.niu.edu?subject=Bahamas Bookings &body=Your ticket details">
+			<fieldset id="mfield">
+				<legend>Trip Planner</legend>
+			<table id="plantab">
+			<tr><td>Full Name</td><td> <input type="text" placeholder="Full name" name="fullname" onfocus="this.value=''; this.onfocus=null;" size="30" aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"></td></tr>
+			<tr><td>Email</td><td> <input type="email" id="email" placeholder="abc@gmail.com" name="email" onfocus="this.value=''; this.onfocus=null;" size="30" required></td></tr>
+			</table>
+			<fieldset id="field">
+			<legend>Book your Flight</legend>
+			<input type="radio" name="radio1" onclick="hideText(this)" value="Hide">One-Way
+			<input type="radio" name="radio1" onclick="showText(this)" value="Show" checked>Round-Trip<br/>
+			<span id="formalign">
+			<label for="addr1">Source</label>
+			<input id="address" name="addr1" type="text">
+			</span>
+			<span id="formalign">
+			<label for="addr2">Destination</label>
+			<input id="address1" name="addr2" type="text">
+			</span>
+			<br/>
+			<span id="formalign">
+			<label for="date1">Start Date</label>
+			<input type="date" name="date1">
+			</span>
+			
+			<span id="formalign">
+			<span id="mytext">
+			<label for="date2">End Date</label>
+			<input name="date2" type="date">
+			</span>
+			</span><br/>
+				<div id="formalign">
+				<label for="drop1">Adult</label>
+				<select name="drop1">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+				</div>
+				<div id="formalign">
+				<label for="drop2">Child</label>
+				<select name="drop2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+				</div>
+				<br/>
+				<input type="submit" id="psubmit" value="Search">
+			
+			</fieldset>
+			<fieldset id="field">
+			<legend>Book your Hotel</legend>
+			<input type="radio" name="radio2" checked>Room
+			<input type="radio" name="radio2">Suit<br/>
+		<span id="formalign">
+			<label for="addr2">Location</label>
+			<input id="address2" name="addr2" type="text" width="140px">
+			</span>
+			<br/>
+			<span id="formalign">
+			<label for="date1">Start Date</label>
+			<input type="date" name="date1">
+			</span>
+			
+			<span id="formalign">
+			<span id="mytext">
+			<label for="date2">End Date</label>
+			<input name="date2" type="date">
+			</span>
+			</span><br/>
+			<div id="formalign">
+				<label for="drop1">Adult</label>
+				<select name="drop1">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+				</div>
+				<div id="formalign">
+				<label for="drop2">Child</label>
+				<select name="drop2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+				</div>
+				<br/>
+				<input type="submit" id="psubmit" value="Search">
+			
+				</fieldset>
+			</fieldset>
+			
+			</form>
+			
+			
+			 <iframe width="794" height="400" src="http://www.youtube.com/embed/tR34RZgKeuo?controls=0&showinfo=0&rel=0&end=25"></iframe>
+		 
+		 <div id="footer">
+		<table>
+		<tr>
+		<td id="space"></td>
+		<td><a href="index.html"><img src="images/flogo.png"/> </a></td>
+		 <td id="space"></td>
+			<td>
+				<ul class="footerul">
+				<li><a href="islands.html">Islands</a></li>
+				<li><a href="touristy.html">Touristy</a></li>
+				<li><a href="attractions.html">Attractions</a></li>
+			  </ul>
+			  </td>
+			  <td id="space"></td>
+			<td>
+				<ul class="footerul">
+				<li><a href="foodies.html">Foodies</a></li>
+				<li><a href="#">Plan Trip</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				
+			  </ul>
+			 </td>
+		   
+			 <td id="space"></td>
+			  <td>
+			  <p>Follow us on</p>
+				<img src="images/social1.png" usemap="#Map" border="0">
+				<map name="Map" id="Map">
+				  <area shape="rect" coords="219,-6,260,38" href="http://www.youtube.com/watch?v=WYbOOmb9U0s" target="_blank"/>
+				  <area shape="rect" coords="174,-5,212,36" href="https://plus.google.com/communities/100039313639618103132" target="_blank"/>
+				  <area shape="rect" coords="130,1,166,37" href="https://www.pinterest.com/e_schrader/travel-bahamas/" target="_blank"/>
+				  <area shape="rect" coords="85,-6,119,38" href="#" target="_blank"/>
+				  <area shape="rect" coords="42,0,77,37" href="https://twitter.com/VisitTheBahamas" target="_blank"/>
+				  <area shape="rect" coords="-10,-6,32,37" href="https://www.facebook.com/TravelBahamas" target="_blank"/>
+				</map>
+				</td>
+		  </tr></table>
+			</div>
+		   </div>
+		 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places&language=en-AU"></script>
+        <script>
+            var autocomplete = new google.maps.places.Autocomplete($("#address")[0], {});
+			var autocomplete = new google.maps.places.Autocomplete($("#address1")[0], {});
+			var autocomplete = new google.maps.places.Autocomplete($("#address2")[0], {});
+			
+            google.maps.event.addListener(autocomplete, 'place_changed', function() {
+                var place = autocomplete.getPlace();
+                console.log(place.address_components);
+            });
+        </script>
+	 
+  </body>
+</html>

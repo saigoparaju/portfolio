@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sreekar's Photography</title>
+		<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+		<meta charset=utf-8>
+        <meta name="description" content="Sreekar Photography" />
+        <meta name="keywords" content="Sreekar's, Photography, Portraits, Landscapes, Wedding"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript">
+			<!--
+			var image1=new Image()
+			image1.src="images/image1.jpg"
+			var image2=new Image()
+			image2.src="images/image2.jpg"
+			var image3=new Image()
+			image3.src="images/image3.jpg"
+			//-->
+		</script>
+	</head>
+    <body>
+		<div id="logo">
+		 <a href="#"> <img src="images/logo.png">
+		 </a>
+		 </div>
+		<div class="header">
+		  
+			<img id="bg" name="slide" src="images/image1.jpg" alt="logo"/>
+		
+		</div>
+		<div id="wrapper">
+
+			<ul id="menu">
+			<li>
+				<a href="#" class="active">Home</a>
+				</li><li>
+				<a href="gallery.html">Gallery</a>
+				</li><li>
+				<a href="stock.html">Stock</a>
+				</li><li>
+				<a href="session.html">Session</a>
+				</li><li>
+				<a href="contact.html">Contact</a>
+				</li><li>
+				<a href="learn.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Learn</a>
+				<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+					<a href="learn.html">Video</a>
+					<a href="learn.html#footer">Content</a>
+				</div>
+				</li></ul>
+				<div style="clear:both">
+		
+				  
+			<img id="mainslide" name="slide1" src="images/image1.jpg"/>
+			<script>
+			<!--
+			//variable that will increment through the images
+			var step=1
+			function slideit(){
+			//if browser does not support the image object, exit.
+			if (!document.images)
+			return
+			document.images.slide.src=eval("image"+step+".src")
+			if (step<3)
+			step++
+			else
+			step=1
+			//call function "slideit()" every 2.5 seconds
+			setTimeout("slideit()",3000)
+			}
+			slideit()
+			//-->
+			<!--
+			//variable that will increment through the images
+			var step1=1
+			function slideit1(){
+			//if browser does not support the image object, exit.
+			if (!document.images)
+			return
+			document.images.slide1.src=eval("image"+step1+".src")
+			if (step1<3)
+			step1++
+			else
+			step1=1
+			//call function "slideit()" every 2.5 seconds
+			setTimeout("slideit1()",3000)
+			}
+			slideit1()
+			//-->
+			</script>
+			
+			<table id="itab"><tr><td id="icontent">
+			<div id="ilinks1">
+			<h3>Welcome to Sreekars Photography</h3>
+			<p>I Sreekar Goparaju, started photography 10 years ago with a goal of capturing the beauty of the world. My love for photography has grown
+			throughout these years. I decided to showcase my work and teach people out there who want to take up photography as a profession or hobby.
+			Feel free to 
+			<a href="contact.html">contact me </a> for more information.</p>
+			</div>
+			</td><td id="icontent2">
+			<div id="ilinks2">
+			<h2>Want to get started?</h2>
+			<p>Feel free to browse our 
+			<a href="gallery.html">galleries</a> and plenty of 
+			<a href="learn.html">learning</a> material to start off.</p>
+			</div>
+			</td></tr></table>
+			<div id="footer">
+				
+				<a href="http://www.facebook.com/sreekarsclicks" target="_blank"><img src="images/fb.png" alt="logo" /></a>
+				<a href="http://www.flickr.com/sreekargsv" target="_blank"><img src="images/fr.png" alt="logo"/></a>
+				<b>Photography by Sreekar Goparaju</b>
+				
+			</div>
+		</div>	
+	</body>
+</html>
